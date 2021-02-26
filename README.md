@@ -6,7 +6,9 @@ A somewhat 'universal' breakout board for Dorji DRF1278F and XL1278-SMT modules.
 
 TODO: journey of LoRa modules DRF1278F vs XL1278-SMT vs RFM98
 
+## Documentation
 
+CI/CD documentation generation ![KiCad exports documentation generation](https://github.com/matburnham/lora-breakout/actions/workflows/kicad-exports.yml/badge.svg)
 
 # References
 
