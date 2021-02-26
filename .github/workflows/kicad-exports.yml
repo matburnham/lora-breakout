@@ -14,6 +14,12 @@ on:
       - '**.sch'
       - '**.kicad_pcb'
 
+global:
+  filters:
+    - filter: 'Ignore Courtyards overlap'
+      error: 45
+      regex:  ''
+
 jobs:
   export:
     runs-on: ubuntu-latest
