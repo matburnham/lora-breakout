@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Connector:Conn_Coaxial J1
 U 1 1 60306FAD
-P 4900 2150
-F 0 "J1" H 5000 2125 50  0000 L CNN
-F 1 "Conn_Coaxial" H 5000 2034 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 4900 2150 50  0001 C CNN
-F 3 " ~" H 4900 2150 50  0001 C CNN
-	1    4900 2150
+P 5150 2150
+F 0 "J1" H 5250 2125 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5250 2034 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 5150 2150 50  0001 C CNN
+F 3 " ~" H 5150 2150 50  0001 C CNN
+	1    5150 2150
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 2200 0    50   Input ~ 0
@@ -41,20 +41,14 @@ Wire Wire Line
 	3050 2200 3150 2200
 Text GLabel 3050 4600 0    50   Input ~ 0
 VCC
-Wire Wire Line
-	3050 4600 3150 4600
-Wire Wire Line
-	4350 4000 4900 4000
-Wire Wire Line
-	4900 4000 4900 2350
-Text GLabel 6200 3000 0    50   Input ~ 0
+Text GLabel 5800 3000 0    50   Input ~ 0
 VCC
 Text GLabel 6200 3100 0    50   Input ~ 0
 GND
 Wire Wire Line
 	6200 3100 6300 3100
 Wire Wire Line
-	6200 3000 6300 3000
+	5800 3000 5900 3000
 Text GLabel 3050 4700 0    50   Input ~ 0
 GND
 Text GLabel 3050 1800 0    50   Input ~ 0
@@ -236,49 +230,59 @@ Wire Wire Line
 Text GLabel 3050 2400 0    50   Input ~ 0
 MOSI
 $Comp
-L Device:C C1
-U 1 1 6035BFEB
-P 5300 2800
-F 0 "C1" H 5415 2846 50  0000 L CNN
-F 1 "0.1uF" H 5415 2755 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5338 2650 50  0001 C CNN
-F 3 "~" H 5300 2800 50  0001 C CNN
-	1    5300 2800
-	1    0    0    -1  
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 60334856
+P 4800 2150
+F 0 "JP1" H 4900 2250 50  0000 R CNN
+F 1 "SolderJumper_3_Open" H 4700 2250 50  0000 R CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4800 2150 50  0001 C CNN
+F 3 "~" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0101
-U 1 1 6035C5C3
-P 5300 2950
-F 0 "#PWR0101" H 5300 2700 50  0001 C CNN
-F 1 "GND" H 5305 2777 50  0000 C CNN
-F 2 "" H 5300 2950 50  0001 C CNN
-F 3 "" H 5300 2950 50  0001 C CNN
-	1    5300 2950
+L Device:C C1
+U 1 1 6035BFEB
+P 5250 3450
+F 0 "C1" H 5365 3496 50  0000 L CNN
+F 1 "0.1uF" H 5365 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5288 3300 50  0001 C CNN
+F 3 "~" H 5250 3450 50  0001 C CNN
+	1    5250 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0102
 U 1 1 6035CD5F
-P 5300 2650
-F 0 "#PWR0102" H 5300 2500 50  0001 C CNN
-F 1 "VCC" H 5315 2823 50  0000 C CNN
-F 2 "" H 5300 2650 50  0001 C CNN
-F 3 "" H 5300 2650 50  0001 C CNN
-	1    5300 2650
+P 5250 3300
+F 0 "#PWR0102" H 5250 3150 50  0001 C CNN
+F 1 "VCC" H 5265 3473 50  0000 C CNN
+F 2 "" H 5250 3300 50  0001 C CNN
+F 3 "" H 5250 3300 50  0001 C CNN
+	1    5250 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 60334856
-P 4550 2150
-F 0 "JP1" H 4650 2250 50  0000 R CNN
-F 1 "SolderJumper_3_Open" H 4450 2250 50  0000 R CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4550 2150 50  0001 C CNN
-F 3 "~" H 4550 2150 50  0001 C CNN
-	1    4550 2150
-	0    -1   -1   0   
+L power:GND #PWR0101
+U 1 1 6035C5C3
+P 5250 3600
+F 0 "#PWR0101" H 5250 3350 50  0001 C CNN
+F 1 "GND" H 5255 3427 50  0000 C CNN
+F 2 "" H 5250 3600 50  0001 C CNN
+F 3 "" H 5250 3600 50  0001 C CNN
+	1    5250 3600
+	1    0    0    -1  
 $EndComp
+Text GLabel 4450 4000 2    50   Input ~ 0
+GND
+Text GLabel 4450 1900 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4350 1900 4450 1900
+Wire Wire Line
+	4350 1800 4800 1800
+Wire Wire Line
+	4800 1800 4800 1950
 $Comp
 L My_library:DRF1278F U2
 U 1 1 60303A0F
@@ -291,18 +295,27 @@ F 3 "http://www.dorji.com/docs/data/DRF1278F.pdf" H 3750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 1800 4550 1800
+	4350 4000 4450 4000
 Wire Wire Line
-	4550 1800 4550 1950
+	4350 3900 4800 3900
 Wire Wire Line
-	4550 2350 4550 3900
+	4800 3900 4800 2350
+Text GLabel 5150 2350 3    50   Input ~ 0
+GND
 Wire Wire Line
-	4550 3900 4350 3900
+	3050 4600 3150 4600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 603B47C9
+P 5900 3000
+F 0 "#FLG0101" H 5900 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 3150 50  0000 C CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "~" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5900 3000
 Wire Wire Line
-	4350 1900 5000 1900
-Wire Wire Line
-	5000 1900 5000 2350
-Wire Wire Line
-	5000 2350 4900 2350
-Connection ~ 4900 2350
+	5900 3000 6300 3000
 $EndSCHEMATC
