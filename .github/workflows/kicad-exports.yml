@@ -24,7 +24,7 @@ jobs:
       # Required - kibot config file
         config: docs.kibot.yaml
       # optional - prefix to output defined in config
-        dir: Docs/Generated
+        dir: docs
       # optional - schematic file
         schema: 'Hardware/*.sch'
       # optional - PCB design file
