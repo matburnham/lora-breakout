@@ -1,6 +1,6 @@
 # DRF1278F and XL1278-SMT LoRa breakout board
 
-A somewhat 'universal' breakout board for Dorji DRF1278F and XL1278-SMT modules.
+A somewhat 'universal' breakout board to adapt Dorji DRF1278F and XL1278-SMT modules to standard 0.1" matrix breadboard or stripboard format.
 
 # Module identification
 
