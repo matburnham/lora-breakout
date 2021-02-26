@@ -8,7 +8,7 @@ TODO: journey of LoRa modules DRF1278F vs XL1278-SMT vs RFM98
 
 ## Documentation
 
-CI/CD documentation generation ![KiCad exports documentation generation](https://github.com/matburnham/lora-breakout/actions/workflows/kicad-exports.yml/badge.svg)
+CI/CD documentation generation ![KiCad exports documentation generation](https://github.com/matburnham/lora-breakout/actions/workflows/kicad-exports.yml/badge.svg?service=github)
 
 # References
 
