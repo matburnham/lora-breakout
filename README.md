@@ -4,8 +4,6 @@ A somewhat 'universal' breakout board for Dorji DRF1278F and XL1278-SMT modules.
 
 # Module identification
 
-TODO: insert images of DRF1278F vs XL1278-SMT vs RFM98 modules
-
 ![DRF1278F](/Docs/DRF1278F-400x.jpg)
 
 ![XL1278-SMT-front](/Docs/XL1278-SMT-front-200x.jpg) ![XL1278-SMT-back](/Docs/XL1278-SMT-rear-200x.jpg)
@@ -18,10 +16,11 @@ There is a lot of confusion between Ebay and AliExpress sellers alike. One ebay 
 
 ![Ebay screenshot](/Docs/ebay-hedge-bets.jpg)
 
-
 ## Documentation
 
 CI/CD documentation generation ![KiCad exports documentation generation](https://github.com/matburnham/lora-breakout/actions/workflows/kicad-exports.yml/badge.svg?service=github)
+
+TODO: links to generated documentation, etc.
 
 # References
 
