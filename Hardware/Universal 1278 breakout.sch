@@ -28,9 +28,9 @@ $Comp
 L Connector:Conn_Coaxial J1
 U 1 1 60306FAD
 P 5150 2150
-F 0 "J1" H 5250 2125 50  0000 L CNN
-F 1 "Conn_Coaxial" H 5250 2034 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 5150 2150 50  0001 C CNN
+F 0 "J1" H 5250 1950 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5250 1850 50  0000 L CNN
+F 2 "My footprints:SMA_EdgeMount_Holes" H 5150 2150 50  0001 C CNN
 F 3 " ~" H 5150 2150 50  0001 C CNN
 	1    5150 2150
 	1    0    0    -1  
@@ -300,7 +300,7 @@ Wire Wire Line
 	4350 3900 4800 3900
 Wire Wire Line
 	4800 3900 4800 2350
-Text GLabel 5150 2350 3    50   Input ~ 0
+Text GLabel 5150 2450 3    50   Input ~ 0
 GND
 Wire Wire Line
 	3050 4600 3150 4600
@@ -318,4 +318,6 @@ $EndComp
 Connection ~ 5900 3000
 Wire Wire Line
 	5900 3000 6300 3000
+Wire Wire Line
+	5150 2350 5150 2450
 $EndSCHEMATC
