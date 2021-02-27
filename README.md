@@ -22,6 +22,10 @@ CI/CD documentation generation ![KiCad exports documentation generation](https:/
 
 TODO: links to generated documentation, etc.
 
+# Libraries
+
+* KiCad symbol and footprint libraries for DRF1278F and XL1278-SMT for KiCad are at [kicad-libs](https://github.com/matburnham/kicad-libs)
+
 # References
 
 * Inspired by Stuart Robinson's Breadboard Friendly DRF1278 Board [Tindie](https://www.tindie.com/products/stuartsprojects/breadboard-friendly-board-for-dorji-drf1278-module/) | [GitHub](https://github.com/StuartsProjects/Devices/tree/master/Breadboard%20Friendly%20DRF1278%20Board)
