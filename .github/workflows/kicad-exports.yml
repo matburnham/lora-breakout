@@ -29,6 +29,24 @@ jobs:
         schema: 'Hardware/*.sch'
       # optional - PCB design file
         board: 'Hardware/*.kicad_pcb'
+    - uses: nerdyscout/kicad-exports@v2.2
+      with:
+        config: gerbers.kibot.yaml
+        dir: docs
+        schema: 'Hardware/*.sch'
+        board: 'Hardware/*.kicad_pcb'
+    - uses: nerdyscout/kicad-exports@v2.2
+      with:
+        config: model.kibot.yaml
+        dir: docs
+        schema: 'Hardware/*.sch'
+        board: 'Hardware/*.kicad_pcb'
+    - uses: nerdyscout/kicad-exports@v2.2
+      with:
+        config: plot.kibot.yaml
+        dir: docs
+        schema: 'Hardware/*.sch'
+        board: 'Hardware/*.kicad_pcb'
     - name: upload results
       uses: actions/upload-artifact@v2
       with:
