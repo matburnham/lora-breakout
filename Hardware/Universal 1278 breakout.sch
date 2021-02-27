@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Connector:Conn_Coaxial J1
 U 1 1 60306FAD
-P 5150 2150
-F 0 "J1" H 5250 1950 50  0000 L CNN
-F 1 "Conn_Coaxial" H 5250 1850 50  0000 L CNN
-F 2 "My footprints:SMA_EdgeMount_Holes" H 5150 2150 50  0001 C CNN
-F 3 " ~" H 5150 2150 50  0001 C CNN
-	1    5150 2150
+P 5000 1800
+F 0 "J1" H 5100 1600 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5100 1500 50  0000 L CNN
+F 2 "Misc RF:SMA_EdgeMount_Holes" H 5000 1800 50  0001 C CNN
+F 3 " ~" H 5000 1800 50  0001 C CNN
+	1    5000 1800
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 2200 0    50   Input ~ 0
@@ -205,8 +205,6 @@ Text GLabel 3050 2900 0    50   Input ~ 0
 GND
 Wire Wire Line
 	3050 2900 3150 2900
-Text Notes 3900 1200 0    50   ~ 0
-TODO:\n* Do ANT GND and GND need to be seperated?
 Text GLabel 7350 3100 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -229,17 +227,6 @@ Wire Wire Line
 	6200 2900 6300 2900
 Text GLabel 3050 2400 0    50   Input ~ 0
 MOSI
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 60334856
-P 4800 2150
-F 0 "JP1" H 4900 2250 50  0000 R CNN
-F 1 "SolderJumper_3_Open" H 4700 2250 50  0000 R CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4800 2150 50  0001 C CNN
-F 3 "~" H 4800 2150 50  0001 C CNN
-	1    4800 2150
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:C C1
 U 1 1 6035BFEB
@@ -281,8 +268,6 @@ Wire Wire Line
 	4350 1900 4450 1900
 Wire Wire Line
 	4350 1800 4800 1800
-Wire Wire Line
-	4800 1800 4800 1950
 $Comp
 L Misc_RF:DRF1278F U2
 U 1 1 60303A0F
@@ -299,8 +284,8 @@ Wire Wire Line
 Wire Wire Line
 	4350 3900 4800 3900
 Wire Wire Line
-	4800 3900 4800 2350
-Text GLabel 5150 2450 3    50   Input ~ 0
+	4800 3900 4800 1800
+Text GLabel 5000 2100 3    50   Input ~ 0
 GND
 Wire Wire Line
 	3050 4600 3150 4600
@@ -319,5 +304,6 @@ Connection ~ 5900 3000
 Wire Wire Line
 	5900 3000 6300 3000
 Wire Wire Line
-	5150 2350 5150 2450
+	5000 2000 5000 2100
+Connection ~ 4800 1800
 $EndSCHEMATC
