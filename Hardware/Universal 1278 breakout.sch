@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L My_library:XL1278-SMT U1
+L Misc_RF:XL1278-SMT U1
 U 1 1 603034E0
 P 3750 2400
 F 0 "U1" H 3750 3265 50  0000 C CNN
 F 1 "XL1278-SMT" H 3750 3174 50  0000 C CNN
-F 2 "My footprints:XL1278-SMT" H 3750 3350 50  0001 C CNN
+F 2 "Misc RF:XL1278-SMT" H 3750 3350 50  0001 C CNN
 F 3 "http://www.hr-wt.com/html_products/XL1278-SMT-59.html" H 3750 3200 50  0001 C CNN
 	1    3750 2400
 	1    0    0    -1  
@@ -284,12 +284,12 @@ Wire Wire Line
 Wire Wire Line
 	4800 1800 4800 1950
 $Comp
-L My_library:DRF1278F U2
+L Misc_RF:DRF1278F U2
 U 1 1 60303A0F
 P 3750 4500
 F 0 "U2" H 3800 5365 50  0000 C CNN
 F 1 "DRF1278F" H 3800 5274 50  0000 C CNN
-F 2 "My footprints:DRF1278F" H 3750 5300 50  0001 C CNN
+F 2 "Misc RF:DRF1278F" H 3750 5300 50  0001 C CNN
 F 3 "http://www.dorji.com/docs/data/DRF1278F.pdf" H 3750 5300 50  0001 C CNN
 	1    3750 4500
 	1    0    0    -1  
